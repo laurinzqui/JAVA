@@ -1,0 +1,30 @@
+package entidades;
+
+public class Persona {
+    // 1. Propiedades o atributos
+    public String nombre;
+    public int edad;
+    public String correo;
+    public String telefono;
+
+    // 2. Constructor (con parametros)
+    public Persona(String nombre, int edad, String correo, String telefono) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.correo = correo;
+        this.telefono = telefono;
+    }
+
+    // 3. Métodos
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Correo: " + correo);
+        System.out.println("Telefono: " + telefono);
+    }
+
+    public static void main(String[] args) {
+        Persona Laura = new Persona("Laura", 25, "laura@example.com", "123456789");
+        Laura.mostrarInformacion();
+    }
+}
